@@ -1,8 +1,9 @@
 # wyh-ai-coding(校园信息管理系统)
-一句话+一张图+AI，一键实现Python3、FastAPI、Vue3 等技术栈前后端分离的学生管理系统的vibe coding演示项目。
 
-
-基于 FastAPI + Vue 3 + Element Plus 的现代化校园管理系统，提供学员信息、科目、成绩的全生命周期管理，支持多条件查询、数据统计看板、权限控制等功能。
+  - 一步一步vibe coding 实现Python3、FastAPI、Vue3 等技术栈前后端分离的学生管理系统的演示项目。
+    - AI代码生成[docs/AI生成代码.md]
+    - AI文档生成[docs/AI生成文档.md]
+  - 基于 FastAPI + Vue 3 + Element Plus 的现代化校园管理系统，提供学员信息、科目、成绩的全生命周期管理，支持多条件查询、数据统计看板、权限控制等功能。
 
 ## 目录
 
@@ -62,6 +63,8 @@
 - 自实现 JWT Token 鉴权（Base64 载荷 + SHA-256 签名，有效期 24 小时）
 - 密码 SHA-256 + 随机盐值加密存储
 - 登录状态持久化，路由守卫自动跳转
+  
+![登录页面](docs/fun/login.png)
 
 ### 📊 数据看板
 
@@ -72,6 +75,8 @@
 - 最近学员动态、最近成绩记录
 - 基础数据字典（考试类型、科目类别、班级列表）
 
+![数据看板页面](docs/fun/kanban.png)
+
 ### 👨‍🎓 学员管理
 
 - 学员信息 CRUD（增删改查）
@@ -79,6 +84,8 @@
 - 分页查询，默认每页 10 条
 - 学号/手机号/身份证号唯一性校验
 - 关联成绩时禁止删除（软删除）
+
+![学生管理页面](docs/fun/student.png)
 
 ### 📚 科目管理
 
@@ -89,6 +96,8 @@
 - 启用/停用状态切换
 - 关联成绩时禁止删除（物理删除）
 
+![科目管理页面](docs/fun/subject.png)
+
 ### 📝 成绩管理
 
 - 单条成绩录入 + 批量成绩录入
@@ -98,16 +107,22 @@
 - 成绩修改自动重算等级
 - 按科目统计汇总（平均分/最高分/最低分）
 
+![成绩管理页面](docs/fun/score.png)
+
 ### 🔍 数据查询
 
 - 学员成绩多维度筛选查询
 - 支持学员、科目、考试类型、班级、学期联合筛选
 - 分页展示
 
+![数据查询页面](docs/fun/query.png)
+
 ### ⚙️ 个人中心
 
 - 个人信息查看与修改（邮箱、手机号格式校验）
 - 密码修改（原密码校验 + 长度校验）
+
+![个人中心页面](docs/fun/profile.png)
 
 ### 🎨 UI 设计
 
@@ -122,7 +137,7 @@
 ## 项目结构
 
 ```
-school_manager/
+wyh-ai-coding/
 ├── backend/                          # 后端服务（FastAPI）
 │   ├── config.py                     # 全局配置（数据库、密钥、Token过期时间）
 │   ├── database.py                   # 数据库工具类（PyMySQL 上下文管理器）
@@ -187,7 +202,7 @@ school_manager/
 mysql -u root -p
 
 # 执行初始化脚本（创建数据库 + 表结构 + 测试数据）
-source /path/to/school_manager/docs/init.sql
+source /path/to/wyh-ai-coding/docs/init.sql
 ```
 
 初始化脚本包含：
@@ -199,7 +214,7 @@ source /path/to/school_manager/docs/init.sql
 
 ```bash
 # 进入后端目录
-cd school_manager/backend
+cd wyh-ai-coding/backend
 
 # 安装依赖
 pip install -r requirements.txt
@@ -219,7 +234,7 @@ python main.py
 
 ```bash
 # 进入前端目录
-cd school_manager/frontend
+cd wyh-ai-coding/frontend
 
 # 安装依赖
 npm install
