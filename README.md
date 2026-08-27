@@ -1,8 +1,8 @@
 # wyh-ai-coding(校园信息管理系统)
 
   - 一步一步vibe coding 实现Python3、FastAPI、Vue3 等技术栈前后端分离的学生管理系统的演示项目。
-    - AI代码生成[docs/AI生成代码.md]
-    - AI文档生成[docs/AI生成文档.md]
+    - [AI代码生成](docs/AI生成代码.md)
+    - [AI文档生成](docs/AI生成文档.md)
   - 基于 FastAPI + Vue 3 + Element Plus 的现代化校园管理系统，提供学员信息、科目、成绩的全生命周期管理，支持多条件查询、数据统计看板、权限控制等功能。
 
 ## 目录
@@ -228,7 +228,7 @@ python main.py
 - 健康检查：`http://localhost:8000/health`
 - 接口文档（需配置）：`http://localhost:8000/docs`
 
-> **注意**：数据库配置在 `backend/config.py` 中，默认连接 `localhost:3306`，用户 `root`，密码 `qwer!234A`。生产环境建议通过环境变量配置 `DB_CONFIG` 和 `SECRET_KEY`。
+> **注意**：数据库配置在 `backend/config.py` 中，默认连接 `localhost:3306`，用户 `xxx`，密码 `xxx`。生产环境建议通过环境变量配置 `DB_CONFIG` 和 `SECRET_KEY`。
 
 ### 前端服务启动
 
