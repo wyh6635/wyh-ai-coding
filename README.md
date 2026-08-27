@@ -1,7 +1,7 @@
 # wyh-ai-coding(校园信息管理系统)
 
   - 一步一步vibe coding 实现Python3、FastAPI、Vue3 等技术栈前后端分离的学生管理系统的演示项目。
-    - [AI代码生成](docs/AI生成代码.md)
+    - [AI代码生成指导文档](docs/AI生成代码.md)
     - [AI文档生成](docs/AI生成文档.md)
   - 基于 FastAPI + Vue 3 + Element Plus 的现代化校园管理系统，提供学员信息、科目、成绩的全生命周期管理，支持多条件查询、数据统计看板、权限控制等功能。
 
