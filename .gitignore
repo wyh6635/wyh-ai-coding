@@ -68,6 +68,8 @@ instance/
 # Trae:
 .trae/
 
+# Claude code
+.claude/
 
 # Scrapy stuff:
 .scrapy
